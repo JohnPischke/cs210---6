@@ -1,5 +1,5 @@
 from game.cast.actor import Actor
-from game.common.skills import Skills
+from game.common.stats import Stats
 class Archer(Actor):
 
     def __init__(self, x, y):
@@ -8,7 +8,7 @@ class Archer(Actor):
         self._symbol = "?"
         self._text_size = 50
         self._color = (0,0,0)
-        self.skills = Skills(,,,,)
+        self.stats = Stats(,,,,)
 
     def get_skills():
         return self.skills

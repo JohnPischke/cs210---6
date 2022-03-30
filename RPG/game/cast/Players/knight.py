@@ -8,7 +8,7 @@ class Knight(Actor):
         self._symbol = "!>"
         self._text_size = 65
         self._color = (0,0,0)
-        self.skills = Skills(,,,,)
+        self.stats = Stats(,,,,)
         
 
     def get_skills():
