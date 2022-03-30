@@ -1,5 +1,5 @@
 from game.cast.actor import Actor
-from game.common.skills import Skills
+from game.common.stats import Stats
 class Knight(Actor):
 
     def __init__(self):
