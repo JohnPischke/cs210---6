@@ -11,6 +11,6 @@ class Knight(Actor):
         self.stats = Stats(,,,,)
         
 
-    def get_skills():
-        return self.skills
+    def get_stats():
+        return self.stats
     
