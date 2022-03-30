@@ -9,8 +9,11 @@ class Knight(Actor):
         self._text_size = 65
         self._color = (0,0,0)
         self.stats = Stats(2, 0, 2, 0)
-        
 
-    def get_stats():
+        self.current_hp = 0
+
+    def get_stats(self):
         return self.stats
-    
+
+    def get_current_hp(self):
+        return self.current_hp

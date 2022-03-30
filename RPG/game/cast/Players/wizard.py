@@ -9,6 +9,10 @@ class Archer(Actor):
         self._text_size = 50
         self._color = (0,0,0)
         self.stats = Stats(0, 0, 2, 3)
+        self.current_hp = 0
 
-    def get_skills():
-        return self.skills
+    def get_stats(self):
+        return self.stats
+
+    def get_current_hp(self):
+        return self.current_hp
