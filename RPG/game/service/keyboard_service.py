@@ -5,7 +5,7 @@
 
 
 
-from game.location.location import Location
+from game.common.location import Location
 import pyray
 class Keyboard_Service:
     
@@ -17,16 +17,16 @@ class Keyboard_Service:
         dx = 0
         dy = 0
 
-        if pyray.is_key_down(pyray.KEY_A):
+        if pyray.is_key_down(pyray.KEY_1):
             dx = -1
         
-        if pyray.is_key_down(pyray.KEY_D):
+        if pyray.is_key_down(pyray.KEY_2):
             dx = 1
 
-        if pyray.is_key_down(pyray.KEY_W):
+        if pyray.is_key_down(pyray.KEY_3):
             dy = -1
 
-        if pyray.is_key_down(pyray.KEY_S):
+        if pyray.is_key_down(pyray.KEY_4):
             dy = 1
 
         direction = (dx , dy )
