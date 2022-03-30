@@ -1,6 +1,6 @@
 from game.cast.Players.player import Player
 from game.common.skills import Skills
-class Knight(Player):
+class Knight(Actor):
 
     def __init__(self, x, y):
         super().__init__(x,y)
