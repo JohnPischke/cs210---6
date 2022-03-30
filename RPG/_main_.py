@@ -4,8 +4,8 @@
 # Logan Crossley
 
 from game.director.director import Director
-from game.services.video_service import Video_Service
-from game.services.keyboard_service import Keyboard_Service
+from game.service.video_service import Video_Service
+from game.service.keyboard_service import Keyboard_Service
 
 
 FRAME_RATE = 5
