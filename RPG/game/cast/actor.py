@@ -3,7 +3,7 @@ from game.common.location import Location
 class Actor:
 
     def __init__(self):
-        self._location = Location(x, y)
+        self._location = Location(0, 0)
         self._symbol = "#"
         self._text_size = 50
         self._color = (0,0,0)
