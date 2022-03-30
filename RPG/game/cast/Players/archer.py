@@ -1,11 +1,15 @@
-class archer: 
-    def size(self): 
-        self.size = 3
-        return self.size
+from game.cast.Players.player import Player
+from game.common.skills import Skills
+class Archer(Actor):
 
-    def symbol(self): 
-        self.symbol = '-->'
-        return self.symbol
+    def __init__(self, x, y):
+        super().__init__(x,y)
+        #self._location = Location(x, y)
+        #self._symbol = "#"
+        #self._text_size = 50
+        self._color = (0,0,0)
+        self.skills = Skills(,,,,)
 
-    def color(self)
-        self.color = 
+    def get_skills():
+        return self.skills
+    
