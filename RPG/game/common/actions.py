@@ -1,39 +1,70 @@
 class Actions: 
     
     def __init__(self, doer, reciever): 
-    self.doer_stats = doer.get_stats()
+        self.doer = doer
+        self.doer_stats = self.doer.get_stats()
 
-    self.doer_strength = doer_stats.get_strength
-    self.doer_health = doer.get_current_hp
-    self.doer_defense = doer_stats.get_defense
-    self.doer_heal = doer_stats.get_heal
+        self.doer_strength = self.doer_stats.get_strength()
+        self.doer_health = self.doer.get_current_hp()
+        self.doer_defense = self.doer_stats.get_defense()
+        self.doer_heal = self.doer_stats.get_heal()
+        
+        self.reciever = reciever
+        self.reciever_stats = self.reciever.get_stats()
 
+        self.reciever_strength = self.reciever_stats.get_strength()
+        self.reciever_health = self.reciever.get_current_hp()
+        self.reciever_defense = self.reciever_stats.get_defense()
+        self.reciever_heal = self.reciever_stats.get_heal()
+        self.doer_is_defending = False
+        self.reciever_is_defending = False
 
-    self.doer_current_hp = doer.get_current_hp
-
-
-    self.reciever_stats = reciever.get_stats()
-
-    self.reciever_strength = reciever_stats.get_strength
-    self.reciever_health = reciever.get_current_hp
-    self.reciever_defense = reciever_stats.get_defense
-    self.reciever_heal = reciever_stats.get_heal
-
-
-    self.reciever_current_hp = reciever.get_current_hp
-
-    # self.defense_enabled = 
 
 
     def attack(self): 
-        self.reciever_current_hp -= self.doer_strength
-        return self.reciever_current_hp
+        self.doer_is_defending = False
+        damage = 0
+        if self.reciever_is_defending == True:
+            damage = (self.doer_strength - (self.reciever_defense*2))
+            if damage < 0:
+                damage = 0
+            self.reciever_health -= damage
+            self.receiver_is_defending = False
+        else:
+            damage = (self.doer_strength - self.reciever_defense)
+            if damage < 1:
+                damage = 1
+            self.reciever_health -= damage
 
     def defend(self): 
-        # not sure how to make the defend buttong only work once, and only when the player that is being attacked has done the defend action before. 
+        self.doer_is_defending = True
 
     def heal(self): 
-        self.doer_current_hp += self.doer_heal          
+        self.doer_health += self.doer_heal
+        self.doer_is_defending = False          
+
+    def monster_attack(self): 
+        self.reciever_is_defending = False
+        damage = 0
+        if self.doer_is_defending == True:
+            damage = (self.reciever_strength - (self.doer_defense*2))
+            if damage < 0:
+                damage = 0
+            self.doer_health -= damage
+            self.doer_is_defending = False
+        else:
+            damage = (self.reciever_strength - self.doer_defense)
+            if damage < 1:
+                damage = 1
+            self.doer_health -= damage
+
+    def monster_defend(self): 
+        self.reciever_is_defending = True
+      
+    def monster_heal(self): 
+        self.reciever_health += self.reciever_heal        
+        self.reciever_is_defending = False  
+
 
     
 

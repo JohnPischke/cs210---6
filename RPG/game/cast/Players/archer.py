@@ -9,7 +9,7 @@ class Archer(Actor):
         self._symbol = "-->"
         self._text_size = 50
         self._color = (0,0,0)
-        self.stats = Stats(0,0,0,0)
+        self.stats = Stats(2,2,3,2)
         self.current_hp = 0
         self.name = "Archer"
 

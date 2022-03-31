@@ -10,7 +10,7 @@ class Monster(Actor):
         self._symbol = "?"
         self._text_size = 50
         self._color = (0,0,0)
-        self.stats = Stats(random.randint(0, 6),random.randint(0, 6),random.randint(0, 6),random.randint(0, 6))
+        self.stats = Stats(random.randint(0,2),random.randint(0, 2),random.randint(0, 2),random.randint(0, 2))
         self.current_hp = 0
         self.name = "Monster"
 

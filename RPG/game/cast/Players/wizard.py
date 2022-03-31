@@ -9,7 +9,7 @@ class Wizard(Actor):
         self._symbol = "?"
         self._text_size = 50
         self._color = (0,0,0)
-        self.stats = Stats(0, 0, 2, 3)
+        self.stats = Stats(3, 1, 1, 3)
         self.current_hp = 0
         self.name = "Wizard"
 
