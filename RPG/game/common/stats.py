@@ -8,7 +8,7 @@ class Stats:
         self.heal = (2 + d) * self.level
 
 
-  def get_level(self): 
+    def get_level(self): 
         return self.level
 
     def get_strength(self): 
@@ -22,5 +22,8 @@ class Stats:
     
     def get_heal(self): 
         return self.heal
+
+    def set_level(self, value):
+        self.level = value
     
   

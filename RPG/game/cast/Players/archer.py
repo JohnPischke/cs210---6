@@ -10,6 +10,7 @@ class Archer(Actor):
         self._color = (0,0,0)
         self.stats = Stats(0,0,0,0)
         self.current_hp = 0
+        self.name = "Archer"
 
     def get_stats(self):
         return self.stats

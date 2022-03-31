@@ -1,19 +1,25 @@
+import random
 from game.cast.actor import Actor
 from game.common.stats import Stats
-class Archer(Actor):
+
+class Zombie(Actor):
 
     def __init__(self):
         super().__init__()
-        self._location = Location(250, 250)
+        self._location = Location(450, 250)
         self._symbol = "?"
         self._text_size = 50
         self._color = (0,0,0)
-        self.stats = Stats(0, 0, 2, 3)
+        self.stats = Stats(random.randint(0, 6),random.randint(0, 6),random.randint(0, 6),random.randint(0, 6))
         self.current_hp = 0
-        self.name = "Wizard"
+        self.name = "Zombie"
+
 
     def get_stats(self):
         return self.stats
 
     def get_current_hp(self):
         return self.current_hp
+    
+    def level_up (self, level):
+        self.stats.set_level(self.stats.get_level() + level)

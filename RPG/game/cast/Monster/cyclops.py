@@ -1,17 +1,17 @@
 import random
 from game.cast.actor import Actor
 from game.common.stats import Stats
-class Monster(Actor):
+class Cyclops(Actor):
 
     def __init__(self):
         super().__init__()
         self._location = Location(450, 250)
-        self._symbol = "?"
+        self._symbol = "o"
         self._text_size = 50
         self._color = (0,0,0)
         self.stats = Stats(random.randint(0, 6),random.randint(0, 6),random.randint(0, 6),random.randint(0, 6))
         self.current_hp = 0
-        self.name = "Monster"
+        self.name = "Cyclops"
 
 
     def get_stats(self):
