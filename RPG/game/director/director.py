@@ -9,6 +9,9 @@
 
 import pyray
 import random
+from game.cast.Monster.monsterpen import Monster_Pen
+from game.cast.Players.house import House
+#from game.common.actions import Actions
 
 class Director:
     
@@ -16,9 +19,16 @@ class Director:
         self._keyboard_service = keyboard_service
         self._video_service = video_service
         self.game_over = False
+        self.pen = Monster_Pen()
+        self.house = House()
+        self.player = self.house.get_current_player()
 
 
     def start_game(self):
+        self._video_service.open_window()
+        self.pen.fill_pen()
+        self.house.choose_class()
+        self.player = self.house.get_current_player()
         self.game_loop()
 
     def game_loop(self):
@@ -33,8 +43,10 @@ class Director:
         pass
 
     def _do_updates(self):
-        pass
-                 
+        print (self.player.name)
+        self.pen.release_monster()
+        monster = self.pen.get_current_monster()
+        print (monster.name) 
 
         
 

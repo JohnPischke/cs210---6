@@ -1,6 +1,7 @@
 from game.cast.actor import Actor
 from game.common.stats import Stats
-class Archer(Actor):
+from game.common.location import Location
+class Wizard(Actor):
 
     def __init__(self):
         super().__init__()

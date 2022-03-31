@@ -11,6 +11,7 @@ from game.cast.Monster.witch import Witch
 from game.cast.Monster.yeti import Yeti
 from game.cast.Monster.zombie import Zombie
 from game.cast.Monster.monster import Monster
+import random
 
 class Monster_Pen():
 
@@ -25,7 +26,8 @@ class Monster_Pen():
         return self.current_monster
 
     def release_monster(self):
-        self.current_monster = self.pen.pop()
+       if len(self.pen) > 0:
+         self.current_monster = self.pen.pop()
     
     def fill_pen(self):
         for i in range(8):

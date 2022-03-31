@@ -1,6 +1,7 @@
 import random
 from game.cast.actor import Actor
 from game.common.stats import Stats
+from game.common.location import Location
 class Kobold(Actor):
 
     def __init__(self):

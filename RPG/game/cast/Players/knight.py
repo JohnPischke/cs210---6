@@ -1,5 +1,6 @@
 from game.cast.actor import Actor
 from game.common.stats import Stats
+from game.common.location import Location
 class Knight(Actor):
 
     def __init__(self):

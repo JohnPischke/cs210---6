@@ -1,6 +1,7 @@
 import random
 from game.cast.actor import Actor
 from game.common.stats import Stats
+from game.common.location import Location
 class Spider(Actor):
 
     def __init__(self):
