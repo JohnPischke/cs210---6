@@ -10,6 +10,13 @@ class Actor:
     
     def get_location (self):
         return self._location
+    
+    def get_x(self):
+        return self._location.get_x()
+    
+    def get_y(self):
+        return self._location.get_y()
+
 
     def get_symbol (self):
         return self._symbol

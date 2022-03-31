@@ -32,7 +32,6 @@ class Director:
 
 
     def start_game(self):
-        self._video_service.open_window()
         self.pen.fill_pen()
         self.house.choose_class()
         self.player = self.house.get_current_player()
@@ -119,6 +118,10 @@ class Director:
         self._video_service.clear_buffer()
         print(f"{self.player.name} has {self.player.current_hp} HP")
         print(f"{self.monster.name} has {self.monster.current_hp} HP\n")
+        #self._video_service.draw_actor()
+        self._video_service.draw_actor(self.player)
+        self._video_service.draw_actor(self.monster)
+        #pyray.draw_text(str("Game Over"), 80, 250, 150, (252,252,252))
         while self.playing_game == False:
             print ("Game Over")
         #self._video_service.draw_actors(actors)

@@ -9,7 +9,7 @@ class Harpy(Actor):
         self._location = Location(450, 250)
         self._symbol = "H"
         self._text_size = 50
-        self._color = (0,0,0)
+        self._color = (random.randrange(255), random.randrange(255),random.randrange(255))
         self.stats = Stats(random.randint(0,2),random.randint(0, 2),random.randint(0, 2),random.randint(0, 2))
         self.current_hp = 0
         self.name = "Harpy"
