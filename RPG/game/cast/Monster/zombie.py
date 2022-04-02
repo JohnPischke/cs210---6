@@ -7,9 +7,9 @@ class Zombie(Actor):
 
     def __init__(self):
         super().__init__()
-        self._location = Location(450, 250)
+        self._location = Location(600, 150)
         self._symbol = "?"
-        self._text_size = 50
+        self._text_size = 200
         self._color = (random.randrange(255), random.randrange(255),random.randrange(255))
         self.stats = Stats(random.randint(0,2),random.randint(0, 2),random.randint(0, 2),random.randint(0, 2))
         self.current_hp = 0

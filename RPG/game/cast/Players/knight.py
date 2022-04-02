@@ -5,10 +5,10 @@ class Knight(Actor):
 
     def __init__(self):
         super().__init__()
-        self._location = Location(250, 250)
-        self._symbol = "!>"
-        self._text_size = 65
-        self._color = (0,0,0)
+        self._location = Location(150, 150)
+        self._symbol = "K"
+        self._text_size = 200
+        self._color = (255,48,48)
         self.stats = Stats(2, 4, 2, 1)
         self.name = "Knight"
         self.current_hp = 0

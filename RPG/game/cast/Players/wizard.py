@@ -5,9 +5,9 @@ class Wizard(Actor):
 
     def __init__(self):
         super().__init__()
-        self._location = Location(250, 250)
+        self._location = Location(150, 150)
         self._symbol = "?"
-        self._text_size = 50
+        self._text_size = 200
         self._color = (0,0,255)
         self.stats = Stats(3, 1, 1, 3)
         self.current_hp = 0

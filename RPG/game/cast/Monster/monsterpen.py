@@ -30,7 +30,7 @@ class Monster_Pen():
          self.current_monster = self.pen.pop()
     
     def fill_pen(self):
-        for i in range(8):
+        for i in range(100):
             x = random.randint(1,12)
             if x == 1:
                monster = Cyclops()

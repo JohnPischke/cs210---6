@@ -26,18 +26,11 @@ class House():
     def get_current_player(self):
         return self.current_player
 
-    def choose_class(self):
-        have_class = False
-        while have_class == False:
-            print ("choose your class\n 1 for wizard\n 2 for archer\n 3 for Knight\n\n Press enter to confirm")
-            answer = input()
-            if answer == "1":
+    def choose_class(self, answer):
+            if answer == 1:
                 self.current_player = Wizard()
-                have_class = True
-            if answer == "2":
+            if answer == 2:
                 self.current_player = Archer()
-                have_class = True
-            if answer == "3":
+            if answer == 3:
                 self.current_player = Knight()
-                have_class = True
    
