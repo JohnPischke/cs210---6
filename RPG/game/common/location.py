@@ -1,9 +1,8 @@
-
 # Names of People in Group: 
 # Dawson Packer
 # John Pischke
 # Logan Crossley
-
+''' This is the location class, it holds an location for objects'''
 
 import random
 

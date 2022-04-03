@@ -2,6 +2,7 @@
 # Dawson Packer
 # John Pischke
 # Logan Crossley
+''' This is the main driver file of the program.'''
 
 from game.director.director import Director
 from game.service.video_service import Video_Service

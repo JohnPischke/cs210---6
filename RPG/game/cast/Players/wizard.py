@@ -1,3 +1,9 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the wizard player class. this is the basic framework of a player class that has specific stats '''
+
 from game.cast.actor import Actor
 from game.common.stats import Stats
 from game.common.location import Location

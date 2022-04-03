@@ -1,3 +1,8 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the monster pen class. this class creates and holds monsters in a list as well as the current monster '''
 from game.cast.Monster.cyclops import Cyclops
 from game.cast.Monster.demon import Demon
 from game.cast.Monster.dragon import Dragon

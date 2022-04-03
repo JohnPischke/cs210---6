@@ -1,3 +1,8 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the Stats class, this class is the base of each player class and monster '''
 class Stats: 
     def __init__(self, a, b, c, d): 
         self.a = a

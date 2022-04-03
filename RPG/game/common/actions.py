@@ -1,3 +1,8 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the Action class. this class preforms actions by the player and monster'''
 class Actions: 
     
     def __init__(self, doer, reciever): 

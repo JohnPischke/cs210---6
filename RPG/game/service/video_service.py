@@ -1,3 +1,8 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the video service of the program that creates and manages the display'''
 
 import pyray
 

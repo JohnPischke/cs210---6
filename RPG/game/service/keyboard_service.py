@@ -2,7 +2,7 @@
 # Dawson Packer
 # John Pischke
 # Logan Crossley
-
+''' This is the keyboard service of the program. This detects key presses.'''
 
 
 from game.common.location import Location

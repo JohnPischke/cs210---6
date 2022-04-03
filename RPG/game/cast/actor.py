@@ -1,4 +1,8 @@
-
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the actor parent class. this class holds all the methods that players and monsters will use'''
 from game.common.location import Location
 class Actor:
 

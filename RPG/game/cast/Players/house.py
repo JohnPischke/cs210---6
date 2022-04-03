@@ -1,3 +1,9 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the house class. this class is in charge of creating a player class and giving it back'''
+
 #from game.cast.Monster.cyclops import Cyclops
 #from game.cast.Monster.demon import Demon
 #from game.cast.Monster.dragon import Dragon

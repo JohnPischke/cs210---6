@@ -1,3 +1,8 @@
+# Names of People in Group: 
+# Dawson Packer
+# John Pischke
+# Logan Crossley
+''' This is the Monster class. this class is the framework that will be used for all monsters '''
 import random
 from game.cast.actor import Actor
 from game.common.stats import Stats

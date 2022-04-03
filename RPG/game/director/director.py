@@ -1,10 +1,8 @@
-
 # Names of People in Group: 
 # Dawson Packer
 # John Pischke
 # Logan Crossley
-
-
+''' This is the director class of the program, this runs most of the'''
 
 
 import pyray
